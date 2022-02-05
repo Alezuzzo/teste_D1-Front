@@ -1,9 +1,8 @@
 .App {
+  margin-top: -30px;
   width: 100vw;
   height: 100vh;
   background-color: #FAFBFF;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 body {
@@ -17,6 +16,9 @@ body {
   border-top: 5px solid #00E1FF;
   border-bottom: 5px solid #00E1FF;
   background-color: #1A1731;
+  position: fixed;
+  z-index: 1;
+  top: 0;
 }
 
 .Sidebar .SidebarData {
@@ -50,12 +52,12 @@ body {
   font: normal normal bold 16px/18px Gotham;
   font-size: 30px;
   margin: 0px;
-  padding: 5px 0 40px 0;
+  padding: 20px 0 40px 0;
 }
 
 .Sidebar .SidebarData2 {
   list-style: none;
-  margin-top: 100px;
+  margin-top: 130px;
   padding: 0px;
   text-align: center;
 }
@@ -68,8 +70,9 @@ body {
 }
 
 .Header {
-  display: block;
-  width: 95%;
+  padding: 40px;
+  margin-left: 60px;
+  width: 89%;
   height: 100px;  
 }
 
@@ -89,16 +92,19 @@ body {
   width: 400px;
 }
 
-.Header .AcmeIcon {
+.Header .ContentAcmeIcon {
+  border: 1px solid #EBEEF6;
   border-radius: 5px;
-  height: 30px;
+  height: 33px;
   width: 90px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: 0 0 0 20px;
 }
 
-.Header .AcmeIcon img {
-  margin: 4px auto;
+.Header .ContentAcmeIcon .AcmeIcon {
+  padding: 1.5px 0 0 0;
+  height: 90%;
+  width: 60%;
 }
 
 .Header .NameButton {

@@ -1,5 +1,6 @@
 import React from 'react';
 import "../App.css"
+import acme22x from '../assets/icons/acme22x.png';
 
 function Header() {
   return (
@@ -7,7 +8,9 @@ function Header() {
         <div className="Topnav">
             <div className="aNav">
                 <button className="NameButton">A</button>
-                <p className="AcmeIcon"><img src="./assets"></img></p>
+                <div className="ContentAcmeIcon">
+                  <img className="AcmeIcon" src={acme22x}></img>
+                </div>
             </div>
             <div className="NavSpace">
                 <input className="InputNav" type="text" placeholder="Buscar"></input>

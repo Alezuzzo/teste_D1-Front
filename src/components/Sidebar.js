@@ -18,8 +18,7 @@ function Sidebar() {
       <li><BiPieChartAlt2/></li>
       <li><BiRocket/></li>
       <li><BiUser/></li>
-      <li><BiCloud/></li>
-      <li>----</li>
+      <li className="CloudIcon"><BiCloud/></li>
       <li><BiRightTopArrowCircle/></li>
     </ul>
     <ul className="SidebarData2">

@@ -2,6 +2,8 @@
   width: 100vw;
   height: 100vh;
   background-color: #FAFBFF;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 body {
@@ -10,8 +12,8 @@ body {
 }
 
 .Sidebar {
-  height: 98.9%;
-  width: 90px;
+  height: 98.4%;
+  width: 5%;
   border-top: 5px solid #00E1FF;
   border-bottom: 5px solid #00E1FF;
   background-color: #1A1731;
@@ -25,15 +27,30 @@ body {
 }
 
 .Sidebar .SidebarData li {
-  padding: 10px 0 10px 0;
-  font-size: 1.8em;
+  padding: 5px 0 5px 0;
+  font-size: 20px;
   color: white;
 }
 
+.Sidebar .CloudIcon {
+  margin: 0 0 35px 0;
+}
+
+.Sidebar .CloudIcon::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #00E1FF;
+  width: 25px;
+  margin-left: -22px;
+  top: 38%;
+}
+
 .Sidebar .SidebarData .d1Logo {
-  font-size: 2.5em;
+  font: normal normal bold 16px/18px Gotham;
+  font-size: 30px;
   margin: 0px;
-  padding: 20px 0 60px 0;
+  padding: 5px 0 40px 0;
 }
 
 .Sidebar .SidebarData2 {
@@ -44,8 +61,129 @@ body {
 }
 
 .Sidebar .SidebarData2 li {
-  padding: 10px 0 10px 0;
-  font-size: 1.8em;
+  padding: 5px 0 5px 0;
+  font-size: 20px;
   color: white;
 
+}
+
+.Header {
+  display: block;
+  width: 95%;
+  height: 100px;  
+}
+
+.Header .Topnav {
+  height: 50%;
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  padding: 20px auto;
+}
+
+.Header .aNav {
+  display: flex;
+  width: 400px;
+}
+
+.Header .AcmeIcon {
+  border-radius: 5px;
+  height: 30px;
+  width: 90px;
+  background-color: #FFFFFF;
+  margin: 0 0 0 20px;
+}
+
+.Header .AcmeIcon img {
+  margin: 4px auto;
+}
+
+.Header .NameButton {
+  background-color: #117EFF;
+  color: white;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-style: none;
+}
+
+.Header .Topnav .NavSpace .InputNav {
+  background-color: #ffffff;
+  border: 1px solid #CCCFDE;
+  border-radius: 5px;
+  height: 35px;
+  width: 300px;
+  margin: 0 20px 0 0;
+  font: normal normal normal 16px/18px Gotham;
+}
+
+.Header .ButtonJourney {
+  height: 35px;
+  width: 150px;
+  border-style: none;
+  padding: 30px auto;
+  border-radius: 5px;
+  background-color: #117EFF;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.Header .ButtonJourney:hover {
+  background-color: #00E1FF;
+}
+
+.Modal {
+  background-color: #FAFBFF;
+  border-radius: 10px;
+  height: 300px;
+  width: 528px;
+  font: normal normal normal 16px/18px Gotham;
+  color: #3E4157;
+  font: normal normal normal Gotham;
+}
+
+.Modal .TextJourney::after {
+  content: "";
+  position: absolute;
+  top: 690px;
+  left: 55px;
+  height: 2px;
+  background-color: #3E4157;
+  width: 395px;
+}
+
+.Modal .ModalContent {
+  font-size: 24px;
+  background-color: #FAFBFF;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.Modal .ModalContent input {
+  border: 2px solid #3E4157;
+  height: 40px;
+  width: 395px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.Modal .ModalContent button {
+  cursor: pointer;
+  background-color: #FAFBFF;
+  border-style: none;
+  margin-top: 10px;
+  margin-left: 30px;
+  height: 35px;
+  width: 150px;
+  font-size: 24px;
+  font: normal normal normal Gotham;
+}
+
+.Modal button:hover {
+  color: #117EFF;
 }

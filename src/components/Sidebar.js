@@ -1,5 +1,7 @@
 import React from "react";
 import "../App.css";
+import Tippy from '@tippy.js/react'
+import 'tippy.js/dist/tippy.css'
 import {BiPieChartAlt2} from 'react-icons/bi'
 import {BiRocket} from 'react-icons/bi'
 import {BiUser} from 'react-icons/bi'
@@ -15,17 +17,35 @@ function Sidebar() {
   <div className="Sidebar">
     <ul className="SidebarData">
       <li className="d1Logo">D1</li>
-      <li><BiPieChartAlt2/></li>
-      <li><BiRocket/></li>
-      <li><BiUser/></li>
-      <li className="CloudIcon"><BiCloud/></li>
-      <li><BiRightTopArrowCircle/></li>
+      <Tippy content='Análises'>
+        <li><BiPieChartAlt2/></li>
+      </Tippy>
+      <Tippy content='Jornadas'>
+        <li><BiRocket/></li>
+      </Tippy>
+      <Tippy content='Clientes'>
+        <li><BiUser/></li>
+      </Tippy>
+      <Tippy content='CCM Cloud'>
+        <li className="CloudIcon"><BiCloud/></li>
+      </Tippy>
+      <Tippy content='Versão 1'>
+        <li><BiRightTopArrowCircle/></li>
+      </Tippy>
     </ul>
     <ul className="SidebarData2">
-      <li><BiDiamond/></li>
-      <li><BiWrench/></li>
-      <li><BiSortAlt2/></li>
-      <li><BiLogInCircle/></li>
+      <Tippy content='Administração'>
+        <li><BiDiamond/></li>
+      </Tippy>
+      <Tippy content='Help Desk'>
+        <li><BiWrench/></li>
+      </Tippy>
+      <Tippy content='Trocar Conta'>
+        <li><BiSortAlt2/></li>
+      </Tippy>
+      <Tippy content='Sair'>
+        <li><BiLogInCircle/></li>
+      </Tippy>
     </ul>
     
   

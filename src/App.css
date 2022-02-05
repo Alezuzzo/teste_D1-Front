@@ -49,8 +49,8 @@ body {
 }
 
 .Sidebar .SidebarData .d1Logo {
-  font: normal normal bold 16px/18px Gotham;
-  font-size: 30px;
+  width: 30px;
+  height: 20px;
   margin: 0px;
   padding: 20px 0 40px 0;
 }
@@ -74,7 +74,6 @@ body {
   margin-left: 60px;
   width: 89%;
   height: 100px;  
-  background-color: #117EFF;
 }
 
 .Header .Topnav {

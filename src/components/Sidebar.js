@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import Tippy from '@tippy.js/react'
 import 'tippy.js/dist/tippy.css'
+import d1logo from '../assets/icons/d1logo.png'
 import {BiPieChartAlt2} from 'react-icons/bi'
 import {BiRocket} from 'react-icons/bi'
 import {BiUser} from 'react-icons/bi'
@@ -16,7 +17,7 @@ function Sidebar() {
   return (
   <div className="Sidebar">
     <ul className="SidebarData">
-      <li className="d1Logo">D1</li>
+      <img className="d1Logo" src={d1logo}></img>
       <Tippy content='Análises'>
         <li><BiPieChartAlt2/></li>
       </Tippy>

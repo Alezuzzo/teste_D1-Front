@@ -1,6 +1,6 @@
 import React from 'react';
 import "../App.css"
-import acme22x from '../assets/icons/acme22x.png';
+import acme22x from '../assets/icons/acme22x.png'
 import Tippy from '@tippy.js/react'
 import 'tippy.js/dist/tippy.css'
 
@@ -9,7 +9,7 @@ function Header() {
     <div className="Header">
         <div className="Topnav">
             <div className="aNav">
-                <Tippy content='Antônio da Silva'>
+                <Tippy content= 'Antônio da Silva'>
                   <button className="NameButton">A</button>
                 </Tippy>
                 <div className="ContentAcmeIcon">

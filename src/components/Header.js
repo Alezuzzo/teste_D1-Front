@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react'
 import "../App.css"
 import acme22x from '../assets/icons/acme22x.png'
 import Tippy from '@tippy.js/react'
 import 'tippy.js/dist/tippy.css'
+import Modal from './Modal'
 
-function Header() {
+function Header({closeModal}) {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <div className="Header">
         <div className="Topnav">
@@ -18,7 +20,9 @@ function Header() {
             </div>
             <div className="NavSpace">
                 <input className="InputNav" type="text" placeholder="Buscar"></input>
-                <button className="ButtonJourney">+ Nova Jornada</button>
+                <button className="ButtonJourney" onClick={() =>{
+                  setOpenModal(true);
+                }}>+ Nova Jornada</button>{openModal && <Modal closeModal={setOpenModal}/>}
             </div>
         </div>
     </div>

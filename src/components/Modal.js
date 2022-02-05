@@ -10,7 +10,7 @@ function Modal({ closeModal }) {
           <p>Dê um nome para essa jornada</p>
         </div>
         <div>
-          <input className="InputTextModal" placeholder="Nome"></input>
+          <input className="InputTextModal"></input>
         </div>
         <div className="TextDown">
           <p>Você poderá alterar essas informações depois</p>

@@ -5,6 +5,11 @@
   background-color: #FAFBFF;
 }
 
+.TableApp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -230,4 +235,124 @@ body {
   background-color: #00E1FF;
 }
 
+.LiJourney {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 120px;
+  display: inline-block;
 
+}
+
+.LiJourney li {
+  width: 100px;
+  list-style: none;
+  margin-bottom: 20px;
+  display:inline-table;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.LiJourney li:hover {
+  color: #117EFF;
+}
+
+.LiJourney li:first-child{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.LiJourney .IconJourney1 {
+  width: 30px;
+  color: #D190DD;
+}
+
+.LiJourney .IconJourney2 {
+  width: 30px;
+  color: #C1CA4F;
+}
+
+.LiJourney .IconJourney3 {
+  width: 30px;
+  color: #35C667;
+}
+
+.LiJourney .IconJourney4 {
+  width: 30px;
+  color: #3FA8F4;
+}
+
+.LiJourney .IconJourney5 {
+  width: 30px;
+  color: #EBBD3E;
+}
+
+.LiJourney .IconJourney6 {
+  width: 30px;
+  color: #9FABD5;
+}
+
+.LiJourney .CircleNumber {
+  font-size: 16px;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  background-color: #E4E6F1;
+  border: 1px solid #EBEEF6;
+  border-radius: 20px;
+}
+
+.TableJourney {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 70px 0 0 80px;
+  width: 860px;
+  padding-bottom: 40px;
+}
+
+.TableJourney .TiTable {
+  color: #9196AB;
+}
+
+.TableJourney .TiTable th {
+  padding-left: 10px;
+}
+
+.TableJourney table tr th {
+  padding-bottom: 30px;
+  width: 215px;
+}
+
+.TableJourney .LineTable {
+  background-color: #FFFFFF;
+  color: #3E4157;
+}
+
+.TableJourney .LineTable th {
+  padding: 20px 0 20px 10px;
+}
+
+.TableJourney table .IconTable1 {
+  width: 30px;
+  color: #C1CA4F;
+}
+
+.TableJourney table .IconTable2 {
+  width: 30px;
+  color: #35C667;
+}
+
+.TableJourney table .IconTable3 {
+  font-size: 20px;
+  width: 30px;
+  color: #3FA8F4;
+}
+
+.TableJourney table .IconTable4 {
+  width: 30px;
+  color: #EBBD3E;
+}
+
+.TableJourney table .IconTable5 {
+  width: 30px;
+  color: #9FABD5;
+}

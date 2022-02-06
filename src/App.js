@@ -1,18 +1,22 @@
-import React, { useState } from 'react'
-import './App.css';
-import Sidebar from './components/Sidebar';
-import Header from './components/Header';
-import Modal from './components/Modal'
-import Table from './components/Table'
+import React, { useState } from "react";
+import "./App.css";
+import Sidebar from "./components/Sidebar";
+import Header from "./components/Header";
+import LiJourney from "./components/LiJourney";
+import TableJourney from "./components/TableJourney";
+
+
 
 function App() {
-  
-
   return (
     <>
       <div className="App">
-            <Sidebar/>
-            <Header/>            
+        <Sidebar />
+        <Header />
+        <div className="TableApp">
+          <LiJourney />
+          <TableJourney/>
+        </div>
       </div>
     </>
   );

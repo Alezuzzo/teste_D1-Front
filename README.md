@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+<h1 align="center">Teste D1 - Front-end</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="https://www.linkedin.com/in/thalles-alexsander-faria-muzzo-76baa41a9/">
+    <img alt="Feito por" src="https://img.shields.io/badge/Feito%20por-Thalles%20Alexsander-gree">
+  </a>
+</p>
 
-## Available Scripts
+O teste está hospedado em https://teste-d1-eosin.vercel.app/
 
-In the project directory, you can run:
+<img>![image](https://user-images.githubusercontent.com/63300520/152700532-f8860b6b-9e77-4dfb-af60-53c2d7985f5e.png)
 
-### `npm start`
+## Sobre o projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p style="color: black;">O teste foi realizado com intuito de testar as habilidades em React, utilizando bibliotecas relacionadas para o desenvolvimento Front-end, o objetivo foi reconstruir uma aplicação, que pode ser visualizada no protótipo: https://xd.adobe.com/view/f41cc902-3388-42d8-826a-8cbd874656bb-a14f/. </p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Iniciando
 
-### `npm test`
+**Clone o projeto e acesse a pasta.**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias
 
-### `npm run build`
+<p style="color: black;">Para o desenvolvimento do projeto foi necessário que dados fossem consumidos por uma api, por isso foi utilizado o axios, também foi desenvolvido um modal que abre ao ser clicado no botão "nova jornada", além de tooltips que aparecem ao deixar o mouse sobre os icones da sidebar ao lado. </p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<ul>
+      <li>ReactJS</li>
+      <li>Axios</li>
+      <li>Tooltip</li>
+   </ul>
+   </p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Executando
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Entre no diretório
+cd Teste_D1-Thalles
 
-### `npm run eject`
+# Baixe as dependências
+yarn install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Execute a aplicação
+yarn start
+```
+Após isso, será executado em seu navegador na porta `http://localhost:3000/`, caso já esteja a utilizando abrirá em outra, localhost:3001 por exemplo.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+💻 **Feito por**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-  <p>Thalles Alexsander</p>
+   Obrigado pela visita!

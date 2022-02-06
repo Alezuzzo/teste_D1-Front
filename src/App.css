@@ -1,3 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   margin-top: -30px;
   width: 100vw;
@@ -210,17 +220,40 @@ body {
   border-style: none;
 }
 
-.Header .Topnav .NavSpace .InputNav {
+.Header .Topnav .InputNav {
   background-color: #ffffff;
   border: 1px solid #CCCFDE;
   border-radius: 5px;
-  height: 35px;
-  width: 300px;
+  height: 30px;
   margin: 0 20px 0 0;
-  font: normal normal normal 16px/18px Gotham;
 }
 
+.NavSpace {
+  display: flex;
+  align-items: center;
+  
+}
 
+.NavSpace .SearchIcon {
+  display: flex;
+  align-content: center;
+}
+
+.NavSpace .SearchInput {
+  background-color: rgb(255, 255, 255);
+  height: 30px;
+  padding: 0 0 0 10px;
+  border: 1px solid #CCCFDE;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.NavSpace .SearchInput .InputNav {
+  border: none;
+  outline: none;
+}
 
 .Header .ButtonJourney {
   height: 35px;
@@ -307,7 +340,7 @@ body {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   margin: 70px 0 0 80px;
-  width: 860px;
+  width: 900px;
   padding-bottom: 40px;
 }
 
@@ -325,38 +358,43 @@ body {
   width: 215px;
 }
 
-.TableJourney .LineTable {
-  background-color: #FAFBFF;
-  color: #3E4157;
+table, tr, td {
+  border: none !important;
   border-collapse: collapse;
+}
+
+.TableJourney .LineTable {
+  background-color: rgb(255, 255, 255);
+  color: #3E4157;
+  margin-bottom: 5px;  
 }
 
 .TableJourney .LineTable th {
   padding: 10px 0 10px 10px;
 }
 
-.TableJourney table .IconTable1 {
+.TableJourney table .IconTable0 {
   width: 30px;
   color: #C1CA4F;
 }
 
-.TableJourney table .IconTable2 {
+.TableJourney table .IconTable1 {
   width: 30px;
   color: #35C667;
 }
 
-.TableJourney table .IconTable3 {
+.TableJourney table .IconTable2 {
   font-size: 20px;
   width: 30px;
   color: #3FA8F4;
 }
 
-.TableJourney table .IconTable4 {
+.TableJourney table .IconTable3 {
   width: 30px;
   color: #EBBD3E;
 }
 
-.TableJourney table .IconTable5 {
+.TableJourney table .IconTable4 {
   width: 30px;
   color: #9FABD5;
 }

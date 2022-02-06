@@ -21,12 +21,14 @@ function Header({ closeModal }) {
           </div>
         </div>
         <div className="NavSpace">
-          <i><BiSearch/></i>
-          <input
-            className="InputNav"
-            type="text"
-            placeholder="    Buscar"
-          ></input>
+          <div className="SearchInput">
+            <i className="SearchIcon"><BiSearch/></i>
+            <input
+              className="InputNav"
+              type="text"
+              placeholder="    Buscar"
+            ></input>
+          </div>
           <button
             className="ButtonJourney"
             onClick={() => {

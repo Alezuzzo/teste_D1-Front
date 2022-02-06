@@ -7,7 +7,54 @@ import {
   BiCheck,
 } from "react-icons/bi";
 
-function TableJourney() {
+function TableJourney({dataJourney}) {
+
+  console.log(dataJourney);
+
+  const changeIdToName = (id) =>{
+    switch (id) {
+      case 1:
+        return 'Enviando'
+      case 2:
+        return 'Ativadas'
+      case 3:
+        return 'Configurando'
+      case 4:
+        return 'Ociosa'
+      case 5:
+        return 'Concluída'
+      default:
+        return '';
+    }
+  }
+
+  const changeIdToIcon = (id) =>{
+    switch (id) {
+      case 1:
+        return <th className="IconTable0">
+                <BiPaperPlane/>
+               </th>
+      case 2:
+        return <th className="IconTable1">
+                <BiPlayCircle />
+               </th>
+      case 3:
+        return <th className="IconTable2">
+                <BiPencil />
+               </th>
+      case 4:
+        return <th className="IconTable3">
+                <BiBed />
+               </th>
+      case 5:
+        return <th className="IconTable4">
+                <BiCheck />
+               </th>
+      default:
+        return '';
+    }
+  }
+
   return (
     <div className="TableJourney">
       <table>
@@ -17,39 +64,18 @@ function TableJourney() {
           <th>Sucesso</th>
           <th>Status</th>
         </tr>
+        {dataJourney?.map((item,index)=>(
         <tr className="LineTable">
-          <th>Cobrança</th>
-          <th>20.210.000</th>
-          <th>30%</th>
+          <th>{item.name}</th>
+          <th>{item.recipients}</th>
+          <th>{item.success}</th>
           <div>
-            <th className="IconTable1">
-              <BiPaperPlane />
-            </th>
-            <th>Enviando</th>
+            {changeIdToIcon(item.status)}
+            <th>{changeIdToName(item.status)}</th>
           </div>
         </tr>
-        <tr className="LineTable">
-          <th>Promoção</th>
-          <th>1.940.000</th>
-          <th>50%</th>
-          <div>
-            <th className="IconTable3">
-              <BiPencil />
-            </th>
-            <th>Configurando</th>
-          </div>
-        </tr>
-        <tr className="LineTable">
-          <th>Cobrança</th>
-          <th>12.210.000</th>
-          <th>60%</th>
-          <div>
-            <th className="IconTable1">
-              <BiPaperPlane />
-            </th>
-            <th>Enviando</th>
-          </div>
-        </tr>
+        ))}
+        
       </table>
     </div>
   );

@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import LiJourney from "./components/LiJourney";
 import TableJourney from "./components/TableJourney";
+import api from './api';
 
 
 

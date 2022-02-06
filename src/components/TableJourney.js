@@ -22,10 +22,10 @@ function TableJourney() {
           <th>20.210.000</th>
           <th>30%</th>
           <div>
-            <th className="IconTable1"><BiPaperPlane /></th>
-            <th>
-                Enviando
+            <th className="IconTable1">
+              <BiPaperPlane />
             </th>
+            <th>Enviando</th>
           </div>
         </tr>
         <tr className="LineTable">
@@ -33,10 +33,10 @@ function TableJourney() {
           <th>1.940.000</th>
           <th>50%</th>
           <div>
-            <th className="IconTable3"><BiPencil /></th>
-            <th>
-                Configurando
+            <th className="IconTable3">
+              <BiPencil />
             </th>
+            <th>Configurando</th>
           </div>
         </tr>
         <tr className="LineTable">
@@ -44,13 +44,12 @@ function TableJourney() {
           <th>12.210.000</th>
           <th>60%</th>
           <div>
-            <th className="IconTable1"><BiPaperPlane /></th>
-            <th>
-                Enviando
+            <th className="IconTable1">
+              <BiPaperPlane />
             </th>
+            <th>Enviando</th>
           </div>
         </tr>
-        
       </table>
     </div>
   );

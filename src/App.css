@@ -220,6 +220,8 @@ body {
   font: normal normal normal 16px/18px Gotham;
 }
 
+
+
 .Header .ButtonJourney {
   height: 35px;
   width: 150px;
@@ -318,17 +320,19 @@ body {
 }
 
 .TableJourney table tr th {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+  height: 60%;
   width: 215px;
 }
 
 .TableJourney .LineTable {
-  background-color: #FFFFFF;
+  background-color: #FAFBFF;
   color: #3E4157;
+  border-collapse: collapse;
 }
 
 .TableJourney .LineTable th {
-  padding: 20px 0 20px 10px;
+  padding: 10px 0 10px 10px;
 }
 
 .TableJourney table .IconTable1 {
